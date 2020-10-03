@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Automatically uspends laptop when battery is below 25%
 acpi > battery
 battery_percent=`awk '{ print $4 }' battery`
 length=`echo $battery_percent | wc -m`
