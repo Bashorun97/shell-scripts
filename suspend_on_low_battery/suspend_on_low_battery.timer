@@ -1,0 +1,10 @@
+[Unit]
+Description=Suspend-on-low-battery timer
+
+[Timer]
+OnBootSec=0min
+OnCalendar=*:*:0/30
+Unit=suspend_on_low_battery
+
+[Install]
+WantedBy=multi-user.target

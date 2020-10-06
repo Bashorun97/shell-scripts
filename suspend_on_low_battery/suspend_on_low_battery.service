@@ -1,0 +1,5 @@
+[Unit]
+Description=Suspends Linux Machine when battery equals or is below 25 percent
+
+[Service]
+ExecStart=/usr/bin/suspend_on_low_battery.sh
